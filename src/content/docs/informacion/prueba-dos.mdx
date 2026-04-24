@@ -1,0 +1,96 @@
+---
+title: Prueba dos
+---
+
+Page content follows the second `---`.
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+You can [link to another page](/getting-started/).
+
+You can highlight `inline code` with backticks.
+
+![An illustration of planets and stars featuring the word “astro”](https://raw.githubusercontent.com/withastro/docs/main/public/default-og-image.png)
+
+
+:::note
+Starlight is a documentation website toolkit built with [Astro](https://astro.build/). You can get started with this command:
+
+```sh
+npm create astro@latest -- --template starlight
+```
+
+:::
+
+
+:::tip[Sabias que?]
+Astro helps you build faster websites with [“Islands Architecture”](https://docs.astro.build/en/concepts/islands/).
+:::
+
+:::tip{icon="heart"}
+Astro helps you build faster websites with [“Islands Architecture”](https://docs.astro.build/en/concepts/islands/).
+:::
+
+
+:::caution
+If you are not sure you want an awesome docs site, think twice before using [Starlight](/).
+:::
+
+:::danger
+Your users may be more productive and find your product easier to use thanks to helpful Starlight features.
+
+- Clear navigation
+- User-configurable colour theme
+- [i18n support](/guides/i18n/)
+
+:::
+
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l);
+  return true;
+};
+```
+
+```js "return true;" ins="inserted" del="deleted"
+function demo() {
+  console.log('These are inserted and deleted marker types');
+  // The return statement uses the default marker type
+  return true;
+}
+```
+
+
+```diff lang="js"
+  function thisIsJavaScript() {
+    // This entire block gets highlighted as JavaScript,
+    // and we can still add diff markers to it!
+-   console.log('Old code to be removed')
++   console.log('New and shiny code!')
+  }
+```
+
+## venta con nombre
+```js title="mi primer js"
+console.log('Title attribute example')
+```
+
+## ventana indicando el nombre de las carpetas
+```html
+<!-- src/content/inicio.html -->
+<div>File name comment example</div>
+```
+
+
+
+<details>
+<summary>Where and when is the Andromeda constellation most visible?</summary>
+
+The [Andromeda constellation](<https://en.wikipedia.org/wiki/Andromeda_(constellation)>) is most visible in the night sky during the month of November at latitudes between `+90°` and `−40°`.
+
+</details>
+
+
+Here is a footnote[^1] with some additional text after it.
+
+[^1]: My reference.

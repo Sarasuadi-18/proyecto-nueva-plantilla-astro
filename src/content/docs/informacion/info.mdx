@@ -1,0 +1,136 @@
+---
+title: info
+description: A reference page in my new Starlight docs site.
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+import { Image } from 'astro:assets';
+import miImagen from '/src/assets/dom.png';
+
+import { Steps } from '@astrojs/starlight/components';
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+import { Aside } from '@astrojs/starlight/components';
+
+import { FileTree } from '@astrojs/starlight/components';
+
+
+
+## ejemplo de steps
+<Steps>
+    1. **Configura tu entorno:** Instala las dependencias necesarias.
+    2. **Crea el archivo:** Añade un nuevo archivo en `src/content/docs/`.
+    3. **¡Despliega!:** Ejecuta `npm run build`.
+</Steps>
+
+
+
+## ejemplo de cards 
+
+<CardGrid stagger>
+  <Card title="Diseño UI" icon="pencil">
+    Aprende a usar Figma para tus prototipos.
+  </Card>
+  <Card title="Desarrollo" icon="rocket">
+    Implementa tu código con Astro y Tailwind.
+  </Card>
+  <Card title="Desarrollo" icon="danger">
+    Implementa tu código con Astro y Tailwind.
+  </Card>
+   <Card title="Desarrollo" icon="danger">
+    Implementa tu código con Astro y Tailwind.
+  </Card>
+</CardGrid>
+
+## ejemplo de avisos 
+
+<Aside type="note">Esto es una nota informativa.</Aside>
+<Aside type="tip" title="¡Truco!">Puedes usar iconos aquí también.</Aside>
+<Aside type="caution">Ten cuidado con esta configuración.</Aside>
+<Aside type="danger">No borres el archivo package.json.</Aside>
+
+
+## ejemplo de carpeta
+
+<FileTree>
+- src/
+  - components/
+    - Hola.astro
+  - content/
+    - docs/
+      - **index.mdx**
+- astro.config.mjs
+- package.json
+
+</FileTree>
+
+## Ejemplo de Solicitud
+
+A continuación, se muestra un ejemplo de cómo enviar una solicitud al endpoint:
+
+<Tabs>
+  <TabItem label="Laravel php">
+    ```php
+    // Tu código de Laravel aquí
+    $response = Http::withHeaders([
+        'Accept' => 'application/json',
+    ])->post('https://api-sandbox.factus.com.co/oauth/token', [
+        'grant_type' => 'refresh_token',
+    ]);
+    ```
+  </TabItem>
+
+  <TabItem label="Node js">
+    ```javascript
+    // Tu código de Node.js aquí
+    const response = await fetch('https://api-sandbox.factus.com.co/oauth/token', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new URLSearchParams({ 'grant_type': 'refresh_token' })
+    });
+    ```
+  </TabItem>
+
+  <TabItem label="Curl">
+    ```bash
+    curl -X POST https://api-sandbox.factus.com.co/oauth/token \
+      -H "Accept: application/json" \
+      -d "grant_type=refresh_token" \
+      -d "client_id=tu_id" \
+      -d "client_secret=tu_secret" \
+      -d "refresh_token=tu_token"
+    ```
+  </TabItem>
+</Tabs>
+
+
+
+
+
+
+### Parámetros del Cuerpo (Body)
+
+| Parámetro | Tipo | Descripción | Requerido |
+| :--- | :--- | :--- | :---: |
+| `grant_type` | `string` | Tipo de concesión: `refresh_token` | ✅ |
+| `client_id` | `string` | ID del cliente proporcionado | ✅ |
+| `client_secret` | `string` | Secreto del cliente proporcionado | ✅ |
+| `refresh_token` | `string` | El token de refresco previo | ✅ |
+
+
+![This is an alt text.](/src/assets/luna.png "This is a sample image.")
+
+
+
+## otra imagen 
+
+<Image src={miImagen} alt="sol" width={100} />
+
+
+
+
+Ejemplo de solicitid 
+```
+let message = 'Hello world';
+alert(message);
