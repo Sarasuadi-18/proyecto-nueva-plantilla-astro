@@ -1,0 +1,24 @@
+/* Color para GitHub */
+.social-icons a[href*="github.com"] {
+  color: #712cf9; /* Un morado tipo Astro */
+}
+
+/* Color para tiktok */
+.social-icons a[href*="tiktok.com"] {
+  color: #040404; /* negro tikto*/
+}
+
+/* Color para facebook */
+.social-icons a[href*="facebook.com"] {
+  color: #3b5998; /* Azul facebook */
+}
+
+/* Color para Instagram */
+.social-icons a[href*="instagram"] {
+  color: #E4405F; /* Rosa Instagram */
+}
+
+/* Color para TikTok */
+.social-icons a[href*="tiktok.com"] {
+  color: #000000 !important;
+}
